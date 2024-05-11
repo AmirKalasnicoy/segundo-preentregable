@@ -182,35 +182,16 @@ button[type="submit"]{
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 50%;
-    display: block;
-    justify-content: center;
+    margin-top: 1em;
 }
 
-.contact-card h2 {
-    font-size: 24px;
-    color: #333333;
+.contact-card h2{
+    font-family: "jersey 15";
+    color:#301B3F;
 }
 
-.contact-card p {
-    font-size: 16px;
-    color: #666666;
-}
-
-.social-icons {
-    margin-top: 20px;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 24px;
-    color: #333333;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #007bff; /* Cambiar color al pasar el mouse */
+div a img{
+    height: 3em;
 }
 
 
