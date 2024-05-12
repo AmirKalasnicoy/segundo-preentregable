@@ -160,15 +160,7 @@ button:hover{
     margin: 0 auto; /* Centrar el botón */
 }
 
-/*estilo de footer*/
-footer {
-    font-size: 0.8em;
-    text-align: center;
-    background-color: #2d2d2d;
-    padding: 20px;
-    color: whitesmoke;
-    width: 100%;
-}
+
 
 /*Estilo de contacto*/
 button[type="submit"]{
@@ -194,6 +186,86 @@ div a img{
     height: 3em;
 }
 
+/* Estilos para Nosotros */
+#about {
+    background-color: #3C415C;
+    color: rgb(25, 21, 21);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 3em;
+    font-family: "Jersey 15";
+    color: #301B3F;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para Nuestros Servicios */
+#services {
+    background-color: #2d2d2d;
+    color: rgb(25, 21, 21);
+    padding: 50px 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 3em;
+    font-family: "Jersey 15";
+    color: #301B3F;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.service h3 {
+    font-size: 2em;
+    color: #301B3F;
+}
+
+.service p {
+    font-size: 1.25em;
+}
+
+/* Estilos generales */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/*estilo de footer*/
+footer {
+    background-color: #2d2d2d;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 0.8em;
+}
 
 
 /*Fonts*/
