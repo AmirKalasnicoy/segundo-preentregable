@@ -255,6 +255,35 @@ div a img{
     margin: 0 auto;
     padding: 0 20px;
 }
+
+/* Estilo para la sección de preguntas frecuentes */
+#faq {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo para cada pregunta */
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.faq-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
 /*estilo de footer*/
 footer {
     background-color: #2d2d2d;
