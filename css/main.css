@@ -71,7 +71,6 @@ button:hover{
 #somos-gamecorp .container{
     text-align: center;
     padding: 200px 12px;
-
 }
 /* Estilos de sección "Nuestros Productos" */
 #nuestros-productos {
@@ -79,14 +78,11 @@ button:hover{
     color: whitesmoke;
     border: 1px solid rgb(184, 16, 240);
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 200px;
 }
-
-
 .carta {
     width: 100%; 
     height: auto;
@@ -94,16 +90,14 @@ button:hover{
     color: whitesmoke;
     padding: 20px;
     border-radius: 10px;
-    border:3px solid rgb(142, 17, 195);
+    border:2px solid rgba(142, 17, 195,0.3);;
     margin-bottom:20px;
     text-align: center;
 }
-
 .carta img {
     width: 100%;
     border-radius: 10px;
 }
-
 .carta h3 {
     margin-top: 10px;
 }
@@ -123,8 +117,8 @@ button:hover{
 
 
 #nuestros-productos .carta img {
-    max-width: 100%; /* Ajusta el tamaño máximo de las imágenes al ancho del contenedor */
-    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    max-width: 100%; 
+    height: auto; 
 }
 
 /* Estilos base para dispositivos móviles */
@@ -321,6 +315,41 @@ footer p {
 
 
 @media screen and (min-width: 768px) {
+/*somos GameCorp*/
+#somos-gamecorp .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+#somos-gamecorp .texto{
+    width: 50%;
+    text-align: initial;
+    max-width: 600px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#somos-gamecorp .img-container{
+    background-image: url(../imagenes/somos-gamercorp.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
+#somos-gamecorp h2{
+    margin-top: 0;
+    text-align:start;
+}
+
+
+
+
+
+
+
+
+
+/*Estilo de productos en el index*/
     #nuestros-productos{
         padding: 150px;
     }
