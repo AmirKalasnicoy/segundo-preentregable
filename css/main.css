@@ -71,53 +71,65 @@ button:hover{
 #somos-gamecorp .container{
     text-align: center;
     padding: 200px 12px;
+
 }
-/* Estilo de section y container para dispositivos móviles */
-#nuestros-productos{
-    background-color: rgb(30,30,30);
-    color:whitesmoke;
+/* Estilos de sección "Nuestros Productos" */
+#nuestros-productos {
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    border: 1px solid rgb(184, 16, 240);
 }
-#nuestros-productos .container{
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 200px;
+}
+
+
+.carta {
+    width: 100%; 
+    height: auto;
+    background-color: #2d2d2d;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    border:3px solid rgb(142, 17, 195);
+    margin-bottom:20px;
     text-align: center;
-    padding: 100px 10px;
 }
-#nuestros-productos h2{
-    margin-top:0;
-    font-size: 3em;
-}
-#nuestros-productos p{
-    display: none;
-}
-#nuestros-productos .carta , .cartaP{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px;
-    margin:20px;
-    border-radius: 12px;
-}
-#nuestros-productos button{
-    font-size: 1em;
-}
-/*Productos index*/
-.carta:first-child{
 
-    background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../imagenes/Joystick_ASUS.png");
-
+.carta img {
+    width: 100%;
+    border-radius: 10px;
 }
-.carta:nth-child(2){
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url("../imagenes/XboxSerieX.png");
 
+.carta h3 {
+    margin-top: 10px;
 }
-.carta:nth-child(3){
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
-    url("../imagenes/Play5Slime.png");
 
+.carta button {
+    margin-top: 20px;
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: sans-serif;
 }
+
+.carta button:hover {
+    background-color: rgb(76, 23, 126);
+}
+
+
+#nuestros-productos .carta img {
+    max-width: 100%; /* Ajusta el tamaño máximo de las imágenes al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+}
+
 /* Estilos base para dispositivos móviles */
 .container h2 {
-    color: #301B3F;
+    color: #372048;
     text-align: center;
     padding-top: 1.2em;
     font-family: "Jersey 15";
@@ -297,9 +309,45 @@ footer p {
 }
 
 
+
 /*Fonts*/
 .jersey-15-regular {
     font-family: "Jersey 15", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    #nuestros-productos{
+        padding: 150px;
+    }
+    #nuestros-productos #NewGen {
+    display: flex;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+}
+.carta img {
+    width: 100%;
+    border-radius: 10px;
+}
+.carta {
+    width: 400px; 
+    height: 530px;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+.carta h3 {
+    margin-top: 10px;
+}
+.carta button {
+    align-self: center; 
+    padding: 8px 30px;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
 }
