@@ -206,7 +206,7 @@ div a img{
 #about h2 {
     font-size: 3em;
     font-family: "Jersey 15";
-    color: #301B3F;
+    color:#c594ea;
 }
 
 .about-content {
@@ -220,6 +220,7 @@ div a img{
 }
 
 /* Estilos para Nuestros Servicios */
+
 #services {
     background-color: #2d2d2d;
     color: rgb(25, 21, 21);
@@ -230,7 +231,7 @@ div a img{
 #services h2 {
     font-size: 3em;
     font-family: "Jersey 15";
-    color: #301B3F;
+    color:#c594ea;
 }
 
 .services {
@@ -251,7 +252,7 @@ div a img{
 
 .service h3 {
     font-size: 2em;
-    color: #301B3F;
+    color:#c594ea;
 }
 
 .service p {
@@ -401,7 +402,7 @@ footer p {
     
 }
 .container h2{
-    color:#d8b1f6;
+    color:#c594ea;
 }
 .producto button{
     padding: 8px;
