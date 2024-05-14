@@ -71,6 +71,7 @@ button:hover{
 #somos-gamecorp .container{
     text-align: center;
     padding: 200px 12px;
+    color: rgb(223, 217, 217);
 }
 /* Estilos de sección "Nuestros Productos" */
 #nuestros-productos {
@@ -90,7 +91,7 @@ button:hover{
     color: whitesmoke;
     padding: 20px;
     border-radius: 10px;
-    border:2px solid rgba(142, 17, 195,0.3);;
+    border:2px solid rgba(142, 17, 195,0.3);
     margin-bottom:20px;
     text-align: center;
 }
@@ -121,14 +122,13 @@ button:hover{
     height: auto; 
 }
 
-/* Estilos base para dispositivos móviles */
 .container h2 {
     color: #372048;
     text-align: center;
     padding-top: 1.2em;
     font-family: "Jersey 15";
 }
-
+/*estilo de producto*/
 .productos {
     display: flex;
     flex-direction: column;
@@ -142,8 +142,10 @@ button:hover{
     border-radius: 10px;
     border: 2px solid black;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    color: #B4A5A5;
+    color: #f9f9f9;
     margin-top: 2em;
+    text-align: center;
+    background-color: #2d2d2d;
 }
 
 .producto p {
@@ -156,16 +158,15 @@ button:hover{
 
 .producto img {
     border-radius: 12px;
-    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
-    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    max-width: 100%; 
+    height: auto; 
+    border:2px solid rgba(142, 17, 195,0.3);
 }
-
 
 .productos button {
     font-size: 1.1em;
-    margin: 0 auto; /* Centrar el botón */
+    margin: 0 auto; 
 }
-
 
 
 /*Estilo de contacto*/
@@ -315,6 +316,12 @@ footer p {
 
 
 @media screen and (min-width: 768px) {
+/*navbar*/
+.navbar-nav {
+    margin-left: auto; 
+    gap:20px;
+}
+
 /*somos GameCorp*/
 #somos-gamecorp .container{
     display: flex;
@@ -340,12 +347,6 @@ footer p {
     margin-top: 0;
     text-align:start;
 }
-
-
-
-
-
-
 
 
 
@@ -378,5 +379,41 @@ footer p {
     padding: 8px 30px;
     font-size: 1.2em;
     margin-top: 10px;
+}
+
+
+/*estilo de productos*/
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    justify-items: center; 
+}
+
+.producto {
+    margin-top: 0; 
+    width: 100%; 
+}
+.productos h2{
+    font-size:10em;
+}
+
+.producto img {
+    width: 100%; 
+    min-height: 400px;
+    max-height: 420px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.producto img {
+    transition: transform 0.3s ease; /* Transición suave para el zoom */
+}
+
+.producto img:hover {
+    transform: scale(0.9); /* Reducir el tamaño al pasar el cursor */
 }
 }
