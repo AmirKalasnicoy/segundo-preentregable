@@ -398,6 +398,10 @@ footer p {
 }
 .productos h2{
     font-size:10em;
+    
+}
+.container h2{
+    color:#d8b1f6;
 }
 .producto button{
     padding: 8px;
