@@ -420,10 +420,10 @@ footer p {
     padding: 20px;
 }
 .producto img {
-    transition: transform 0.3s ease; /* Transición suave para el zoom */
+    transition: transform 0.3s ease; 
 }
 
 .producto img:hover {
-    transform: scale(0.9); /* Reducir el tamaño al pasar el cursor */
+    transform: scale(0.9); 
 }
 }
