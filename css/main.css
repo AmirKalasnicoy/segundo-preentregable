@@ -17,19 +17,22 @@ p{font-size: 1.25em;}
 ul{list-style: none;}
 li{font-size: 1.25em;}
 /*Estilos de navbar*/
-.navbar,.bg-navbar{
+/* Navbar styles */
+.navbar-custom, .bg-navbar-custom {
     background-color: #2d2d2d;
 }
-.navbar-brand {
+
+.navbar-brand-custom {
     font-size: 50px;
-    color:rgb(142, 17, 195);
+    color: rgb(142, 17, 195);
     font-family: "Jersey 15";
 }
-.nav-link{
+
+.nav-link-custom {
     font-family: sans-serif;
     font-size: 20px;
     margin-left: 33px;
-    color:whitesmoke;
+    color: whitesmoke;
 }
 /*Estilo de button*/
 button{font-size: 1.2em;
@@ -222,7 +225,7 @@ div a img{
 /* Estilos para Nuestros Servicios */
 
 #services {
-    background-color: #2d2d2d;
+    background-color: #f4eaea;
     color: rgb(25, 21, 21);
     padding: 50px 0;
     text-align: center;
@@ -243,7 +246,7 @@ div a img{
 
 .service {
     width: 300px;
-    background-color: #ffffff;
+    background-color: #2d2d2d;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -257,6 +260,7 @@ div a img{
 
 .service p {
     font-size: 1.25em;
+    color: floralwhite;
 }
 
 /* Estilos generales */
@@ -275,6 +279,7 @@ div a img{
 .container {
     max-width: 800px;
     margin: 0 auto;
+    
 }
 
 /* Estilo para cada pregunta */
