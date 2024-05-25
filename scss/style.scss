@@ -1,0 +1,428 @@
+@import 'pages-styles/mixins';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #3C415C;
+}
+/* Estilo de tipografía */
+h1 {font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3 {font-size: 2em;}
+p {font-size: 1.25em;}
+ul {list-style: none;}
+li {font-size: 1.25em;}
+
+/* Estilos de navbar */
+.navbar-custom, .bg-navbar-custom {
+    background-color: #2d2d2d;
+}
+
+.navbar-brand-custom {
+    font-size: 50px;
+    color: rgb(142, 17, 195);
+    font-family: "Jersey 15";
+}
+
+.nav-link-custom {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 33px;
+    color: whitesmoke;
+}
+
+/* Estilo de button */
+button {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+
+    &:hover {
+        background-color: rgb(76, 23, 126);
+    }
+}
+
+
+/* Estilo de hero */
+#hero {
+    @include flex (column,center,center);
+    text-align: center;
+    height: 90vh;
+    color: whitesmoke;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/hero-mouse.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1{
+        color:whitesmoke;
+    }
+    button{
+        font-size: 1.75em;
+    }
+}
+
+
+
+#somos-gamecorp .container {
+    text-align: center;
+    padding: 200px 12px;
+    color: rgb(223, 217, 217);
+}
+
+/* Estilos de sección "Nuestros Productos" */
+#nuestros-productos {
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    border: 1px solid rgb(184, 16, 240);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 200px;
+}
+
+.carta {
+    width: 100%;
+    height: auto;
+    background-color: #2d2d2d;
+    color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(142, 17, 195, 0.3);
+    margin-bottom: 20px;
+    text-align: center;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    h3{
+        margin-top:10px;
+    }
+    button{
+        margin-top: 20px;
+        background-color: blueviolet;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-family: sans-serif;
+        &:hover{
+            background-color: rgb(76, 23, 126);
+        }
+    }
+}
+
+
+#nuestros-productos {
+    .carta {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+.container{
+    h2 {
+        color: #372048;
+        text-align: center;
+        padding-top: 1.2em;
+        font-family: "Jersey 15";
+    }
+} 
+
+/* Estilo de productos */
+.productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1em;
+    text-align: center;
+    .producto {
+        border-radius: 10px;
+        border: 2px solid black;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        color: #f9f9f9;
+        margin-top: 2em;
+        text-align: center;
+        background-color: #2d2d2d;
+
+        p{
+            font-size: 1.2em;
+        }
+        h3{
+            font-size: 2em;
+        }
+        img{
+            border-radius: 12px;
+            max-width: 100%;
+            height: auto;
+            border: 2px solid rgba(142, 17, 195, 0.3);
+        }
+    }
+    button{
+        font-size: 1.1em;
+        margin: 0 auto;
+    }
+}
+
+
+/* Estilo de contacto */
+button[type="submit"] {
+    font-size: 1em;
+    margin-top: 0.7em;
+}
+
+/* Estilos de redes sociales */
+.contact-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 1em;
+
+    a{
+        color: white;
+    }
+    h2{
+        font-family: "jersey 15";
+        color: #301B3F;
+    }
+}
+div{
+    a{
+        img{
+            height: 3em;
+        }
+    }
+}
+
+/* Estilos para Nosotros */
+#about {
+    background-color: #3C415C;
+    color: rgb(25, 21, 21);
+    padding: 50px 0;
+    text-align: center;
+
+    h2{
+        font-size: 3em;
+        font-family: "Jersey 15";
+        color: #c594ea;
+    }
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    p{
+        font-size: 1.25em;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Estilos para Nuestros Servicios */
+#services {
+    background-color: #f4eaea;
+    color: rgb(25, 21, 21);
+    padding: 50px 0;
+    text-align: center;
+    h2{
+        font-size: 3em;
+        font-family: "Jersey 15";
+        color: #c594ea;
+    }
+}
+
+.services {
+    @include flex (column,center,center);
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 300px;
+    background-color: #2d2d2d;
+    padding: 20px;
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    h3{
+        font-size: 2em;
+        color: #c594ea;
+    }
+    p{
+        font-size: 1.25em;
+        color: floralwhite;
+    }
+}
+
+
+/* Estilos generales */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo para la sección de preguntas frecuentes */
+#faq {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo para cada pregunta */
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    h3{
+        font-size: 1.5em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 1.1em;
+        color: #666;
+    }
+}
+
+
+/* Estilo de footer */
+footer {
+    background-color: #2d2d2d;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    p{
+        font-size: 0.8em;
+    }
+}
+
+/* Fonts */
+.jersey-15-regular {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+    /* Estilos para navbar */
+    .navbar-nav {
+        margin-left: auto;
+        gap: 20px;
+    }
+
+    /* Estilos para la sección "Somos GameCorp" */
+    #somos-gamecorp{
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .texto{
+            @include flex(column,center,center);
+            width: 50%;
+            text-align: initial;
+            max-width: 600px;
+            padding-left: 30px;
+        }
+        .img-container{
+            background-image: url(../imagenes/somos-gamercorp.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            width: 400px;
+        }
+        h2{
+            margin-top: 0;
+            text-align: start;
+        }
+    }
+
+
+    /* Estilos para la sección "Nuestros Productos" */
+    #nuestros-productos {
+        padding: 150px;
+        #NewGen {
+            @include flex (row,center, center);
+            gap:10px;
+        }
+    }
+
+    .carta{
+        @include flex (column,space-between,center);
+        width: 400px;
+        height: 530px;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        h3{
+            margin-top: 10px;
+        }
+        button{
+            align-self: center;
+            padding: 8px 30px;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+    }
+
+    /* Estilos para la sección "Productos" en el index */
+    .productos {
+        @include grid (3,1);
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .producto {
+        margin-top: 0;
+        width: 100%;
+        h2{
+            font-size: 10em;
+        }
+        button{
+            padding: 8px;
+            margin-bottom: 5px;
+        }
+        img{
+            width: 100%;
+            min-height: 400px;
+            max-height: 420px;
+            transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+    .container{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        h2{
+            color: #c594ea;
+        }
+    }
+
+  
+}

@@ -1,0 +1,15 @@
+// Mixin para flexbox
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Mixin para grid
+@mixin grid($columns,$row) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-template-rows: repeat($row, 1fr);
+}
+  
