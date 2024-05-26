@@ -1,0 +1,117 @@
+@media screen and (min-width:1000px ) {
+    /* Estilos para navbar */
+    .navbar-nav {
+        margin-left: auto;
+        gap: 20px;
+    }
+
+    /* Estilos para la sección "Somos GameCorp" */
+    #somos-gamecorp{
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .texto{
+            @include flex(column,center,center);
+            width: 50%;
+            text-align: initial;
+            max-width: 600px;
+            padding-left: 30px;
+        }
+        .img-container{
+            background-image: url(../imagenes/somos-gamercorp.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            width: 400px;
+        }
+        h2{
+            margin-top: 0;
+            text-align: start;
+        }
+    }
+
+
+    /* Estilos para la sección "Nuestros Productos" */
+    #nuestros-productos {
+        padding: 150px;
+        #NewGen {
+            @include flex (row,center, center);
+            gap:10px;
+        }
+    }
+
+    .carta{
+        @include flex (column,space-between,center);
+        width: 400px;
+        height: 530px;
+        img{
+            width: 100%;
+            border-radius: 10px;
+        }
+        h3{
+            margin-top: 10px;
+        }
+        button{
+            align-self: center;
+            padding: 8px 30px;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+    }
+
+    /* Estilos para la sección "Productos" en el index */
+    .productos {
+        @include grid (3,1);
+        gap: 30px;
+        justify-items: center;
+    }
+
+    .producto {
+        margin-top: 0;
+        width: 100%;
+        h2{
+            font-size: 10em;
+        }
+        button{
+            padding: 8px;
+            margin-bottom: 5px;
+        }
+        img{
+            width: 100%;
+            min-height: 400px;
+            max-height: 420px;
+            transition: transform 0.3s ease;
+            &:hover{
+                transform: scale(0.9);
+            }
+        }
+    }
+    .container{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        h2{
+            color: #c594ea;
+        }
+    }
+    .services {
+        @include grid (4,1);
+      }
+    
+      .service {
+        margin: 15px;
+        min-height: 600px;
+        max-height: 600px;
+      }
+  
+}
+@media screen and (min-width:700px) and (max-width:999px) {
+    .services{
+        @include grid (2,1);
+    }
+    .service{
+        min-height: 550px;
+        max-height: 550px;
+    }
+    }
