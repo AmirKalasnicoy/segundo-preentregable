@@ -55,7 +55,7 @@
         button{
             align-self: center;
             padding: 8px 30px;
-            font-size: 1.2em;
+            @include sieze(1.2em,400);
             margin-top: 10px;
         }
     }
@@ -65,13 +65,14 @@
         @include grid (3,1);
         gap: 30px;
         justify-items: center;
+        @include sieze(0.85,400);
     }
 
     .producto {
         margin-top: 0;
-        width: 100%;
-        h2{
-            font-size: 10em;
+        width: 400px;
+        h3{
+            @include sieze(3em,400);
         }
         button{
             padding: 8px;
@@ -80,7 +81,7 @@
         img{
             width: 100%;
             min-height: 400px;
-            max-height: 420px;
+            max-height: 400px;
             transition: transform 0.3s ease;
             &:hover{
                 transform: scale(0.9);
@@ -97,14 +98,21 @@
     }
     .services {
         @include grid (4,1);
-      }
-    
-      .service {
+    }
+    /*estilo de iconos*/
+    footer{
+        a{
+            text-decoration: none;
+                img{
+                    font-size: 1.3em;
+                }
+        }
+    }
+    .service {
         margin: 15px;
         min-height: 600px;
         max-height: 600px;
-      }
-  
+    }
 }
 @media screen and (min-width:700px) and (max-width:999px) {
     .services{
@@ -114,4 +122,47 @@
         min-height: 550px;
         max-height: 550px;
     }
+    .productos {
+        @include flex (column,center,center);
+        flex-wrap: wrap;
+        gap: 20px;
+    
+        .producto {
+            margin-top: 2em;
+            text-align: center;
+            width: 80%; 
+    
+            img {
+                max-width: 85%;
+                height: auto; 
+                border: 2px solid rgba(142, 17, 195, 0.3);
+            }
+    
+            p {
+                @include sieze(1.32em,100);
+                margin-bottom: 2px;
+            }
+    
+            h3 {
+                @include sieze(2em,400);
+            }
+    
+            button {
+                @include sieze(1.1em,600);
+                margin: 0 auto;
+            }
+        }
+    }
+        /*estilo de iconos*/
+        footer{
+            a{
+                text-decoration: none;
+                    img{
+                        @include sieze(1.25em,100);
+                    }
+            }
+            p{
+                @include sieze(1em,400);
+            }
+        }
     }

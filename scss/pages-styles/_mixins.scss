@@ -12,4 +12,8 @@
   grid-template-columns: repeat($columns, 1fr);
   grid-template-rows: repeat($row, 1fr);
 }
-  
+
+@mixin sieze($size,$weight){
+  font-size: $size;
+  font-weight: $weight;
+}
