@@ -1,0 +1,32 @@
+/* Estilo de productos */
+.productos {
+    @include flex (column,center,center);
+    padding-bottom: 1em;
+    text-align: center;
+    .producto {
+        border-radius: $border-radius-large;
+        border: $border-width solid black;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        color: $secondary-color;
+        margin-top: 2em;
+        text-align: center;
+        background-color: $primary-back-ground;
+
+        p{
+            @include sieze (1.2em,400);
+        }
+        h3{
+            @include sieze (2em,400);
+        }
+        img{
+            border-radius: 12px;
+            max-width: 100%;
+            height: auto;
+            border: 2px solid rgba(142, 17, 195, 0.3);
+        }
+    }
+    button{
+        @include sieze (1.1em,400);
+        margin: 0 auto;
+    }
+}

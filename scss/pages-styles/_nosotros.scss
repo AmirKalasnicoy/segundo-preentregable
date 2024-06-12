@@ -1,0 +1,65 @@
+/* Estilos para Nosotros */
+#about {
+    background-color:$secondary-back-ground;
+    color: rgb(25, 21, 21);
+    padding: 50px 0;
+    text-align: center;
+
+    h2{ 
+        @include sieze (3em, 400);
+        font-family: $tipografia-primaria , $tipografia-secundaria;
+        color: #c594ea;
+    }
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    p{
+        @include sieze (1.20em,100);
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Estilos para Nuestros Servicios */
+#services {
+    background-color: #f4eaea;
+    color: rgb(25, 21, 21);
+    padding: 50px 0;
+    text-align: center;
+    h2{
+        @include sieze(3em,400);
+        font-family: $tipografia-primaria , $tipografia-secundaria;
+        color: #c594ea;
+    }
+}
+
+.services {
+    @include flex (column,center,center);
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 300px;
+    background-color: $primary-back-ground;
+    padding: 20px;
+    border-radius:$border-radius-large;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    h3{
+        @include sieze(2em,600);
+        color: #c594ea;
+    }
+    p{
+        @include sieze(1.25em,400);
+        color: $secondary-color;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

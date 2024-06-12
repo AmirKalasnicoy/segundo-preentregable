@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $secondary-back-ground;
+    font-family: $tipografia-secundaria;
+}
+/* Estilo de tipografía */
+h1{@include sieze(3.5em,500)}
+h2{@include sieze(2.7em,400)}
+h3 {@include sieze (2em,400)}
+p{@include sieze(1.25em,300)}
+ul {list-style: none;}
+li{@include sieze(1.25em,400)}
+
+/* Estilos de navbar */
+.navbar-custom, .bg-navbar-custom {
+    background-color:$primary-back-ground;
+}
+
+.navbar-brand-custom {
+    @include sieze(50px,400);
+    color: $navbar-color;
+    font-family: $tipografia-primaria , $tipografia-secundaria;
+}
+
+.nav-link-custom {
+    font-family: $tipografia-secundaria;
+    font-size: 20px;
+    margin-left: 33px;
+    color: $secondary-color;
+}
+
+/* Estilo de button */
+button{
+    @include sieze (1.5em,bold);
+    padding: 10px 20px;
+    border-radius: $border-radius-large;
+    border: $border-width solid black;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: $secondary-color;
+    background-color: $color-button;
+
+    &:hover {
+        background-color: $color-button-hover;
+    }
+}
+
+
+/* Estilo de hero */
+#hero {
+    @include flex (column,center,center);
+    text-align: center;
+    height: 90vh;
+    color: $secondary-color;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imagenes/hero-mouse.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1{
+        color:$secondary-color;
+    }
+    button{
+        @include sieze (1.75,400);
+    }
+}
+
+
+
+#somos-gamecorp{
+    .container {
+        text-align: center;
+        padding: 200px 12px;
+        color: rgb(223, 217, 217);
+    }
+} 
+
+/* Estilos de sección "Nuestros Productos" */
+#nuestros-productos {
+    background-color: rgb(30, 30, 30);
+    color: $secondary-color;
+    border: 1px solid rgb(184, 16, 240);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 200px;
+}
+
+.carta {
+    width: 100%;
+    height: auto;
+    background-color: $primary-back-ground;
+    color: $secondary-color;
+    padding: 20px;
+    border-radius: 10px;
+    border: $border-width  solid rgba(142, 17, 195, 0.3);
+    margin-bottom: 20px;
+    text-align: center;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    h3{
+        margin-top:10px;
+    }
+    button{
+        margin-top: 20px;
+        background-color: $color-button;
+        color: $secondary-color;
+        padding: 10px 20px;
+        border-radius: $border-radius-large;
+        font-family: sans-serif;
+        &:hover{
+            background-color: $color-button-hover;
+        }
+    }
+}
+
+
+#nuestros-productos {
+    .carta {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+.container{
+    h2 {
+        color: $subtitulo-color;
+        text-align: center;
+        padding-top: 1.2em;
+        font-family: $tipografia-primaria , $tipografia-secundaria;
+    }
+} 

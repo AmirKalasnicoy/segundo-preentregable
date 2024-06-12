@@ -1,0 +1,25 @@
+/* Estilo para la sección de preguntas frecuentes */
+#faq {
+    background-color: $secondary-color;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo para cada pregunta */
+.faq-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    h3{
+        @include sieze(1.5em,400);
+        color: $subtitulo-color;
+        margin-bottom: 10px;
+    }
+    p{
+        @include sieze(1.1em,400);
+        color: #666;
+    }
+}

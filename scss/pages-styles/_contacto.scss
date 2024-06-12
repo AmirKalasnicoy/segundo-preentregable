@@ -1,0 +1,35 @@
+/* Estilo de contacto */
+button[type="submit"] {
+    @include sieze (1em,400);
+    margin-top: 0.7em;
+}
+
+.contact-card {
+    background-color: $secondary-color;
+    padding: 20px;
+    border-radius: $border-radius-large;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 0.5em;
+
+    a{
+        color: $secondary-color;
+    }
+    h2{
+        font-family: $tipografia-primaria , $tipografia-secundaria;
+        color: #c594ea;
+    }
+    iframe{
+        width: 300px;
+        height: 300px;
+        padding: 0;
+    }
+}
+
+div{
+    a{
+        img{
+            height: 2em;
+        }
+    }
+}

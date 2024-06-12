@@ -206,7 +206,6 @@ button[type=submit] {
   margin-top: 0.7em;
 }
 
-/* Estilos de redes sociales */
 .contact-card {
   background-color: whitesmoke;
   padding: 20px;
@@ -298,7 +297,6 @@ div a img {
   color: whitesmoke;
 }
 
-/* Estilos generales */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -344,14 +342,6 @@ footer p {
   font-size: 0.8em;
 }
 
-/* Fonts */
-.jersey-15-regular {
-  font-family: "jersey 15", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/*media query*/
 @media screen and (min-width: 1000px) {
   /* Estilos para navbar */
   .navbar-nav {
@@ -528,6 +518,12 @@ footer p {
     font-size: 1em;
     font-weight: 400;
   }
+}
+/* Fonts */
+.jersey-15-regular {
+  font-family: "jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*# sourceMappingURL=main.css.map */
