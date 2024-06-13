@@ -19,6 +19,7 @@ p{@include sieze(1.25em,300)}
 ul {list-style: none;}
 li{@include sieze(1.25em,400)}
 
+
 /* Estilos de navbar */
 .navbar-custom, .bg-navbar-custom {
     background-color:$primary-back-ground;
@@ -109,6 +110,7 @@ button{
     img{
         width: 100%;
         border-radius: 10px;
+        transition: transform 0.3s ease; 
     }
     h3{
         margin-top:10px;
@@ -124,6 +126,9 @@ button{
             background-color: $color-button-hover;
         }
     }
+    &:hover img {
+        transform: scale(0.95); // Reducir el tamaño de la imagen al pasar el cursor
+    }
 }
 
 
@@ -132,8 +137,8 @@ button{
         img {
             max-width: 100%;
             height: auto;
-        }
     }
+}
 }
 
 
@@ -145,3 +150,4 @@ button{
         font-family: $tipografia-primaria , $tipografia-secundaria;
     }
 } 
+

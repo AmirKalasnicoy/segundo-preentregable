@@ -9,6 +9,7 @@
         @include sieze (3em, 400);
         font-family: $tipografia-primaria , $tipografia-secundaria;
         color: #c594ea;
+        margin:23px;
     }
 }
 
@@ -49,11 +50,13 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
     h3{
-        @include sieze(2em,600);
+        @include sieze(1.85em,600);
         color: #c594ea;
+        margin-bottom: 25px;
+        border-bottom:1px solid #c594ea;
     }
     p{
-        @include sieze(1.25em,400);
+        @include sieze(1.15em,400);
         color: $secondary-color;
     }
 }
