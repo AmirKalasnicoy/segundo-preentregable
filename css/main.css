@@ -14,7 +14,7 @@ body {
   font-family: sans-serif;
 }
 
-/* Estilo de tipografía */
+
 h1 {
   font-size: 3.5em;
   font-weight: 500;
@@ -44,7 +44,7 @@ li {
   font-weight: 400;
 }
 
-/* Estilos de navbar */
+
 .navbar-custom, .bg-navbar-custom {
   background-color: #2d2d2d;
 }
@@ -63,7 +63,7 @@ li {
   color: whitesmoke;
 }
 
-/* Estilo de button */
+
 button {
   font-size: 1.5em;
   font-weight: bold;
@@ -78,7 +78,7 @@ button:hover {
   background-color: rgb(76, 23, 126);
 }
 
-/* Estilo de hero */
+
 #hero {
   display: flex;
   flex-direction: column;
@@ -106,7 +106,7 @@ button:hover {
   color: rgb(223, 217, 217);
 }
 
-/* Estilos de sección "Nuestros Productos" */
+
 #nuestros-productos {
   background-color: rgb(30, 30, 30);
   color: whitesmoke;
@@ -165,7 +165,7 @@ button:hover {
   font-family: "jersey 15", sans-serif;
 }
 
-/* Estilo de productos */
+
 .productos {
   display: flex;
   flex-direction: column;
@@ -203,7 +203,6 @@ button:hover {
   margin: 0 auto;
 }
 
-/* Estilo de contacto */
 button[type=submit] {
   font-size: 1em;
   font-weight: 400;
@@ -235,7 +234,7 @@ div a img {
   height: 2em;
 }
 
-/* Estilos para Nosotros */
+
 #about {
   background-color: #3C415C;
   color: rgb(25, 21, 21);
@@ -260,7 +259,7 @@ div a img {
   margin-bottom: 20px;
 }
 
-/* Estilos para Nuestros Servicios */
+
 #services {
   background-color: #f4eaea;
   color: rgb(25, 21, 21);
@@ -310,7 +309,7 @@ div a img {
   padding: 0 20px;
 }
 
-/* Estilo para la sección de preguntas frecuentes */
+
 #faq {
   background-color: whitesmoke;
   padding: 50px 0;
@@ -321,7 +320,7 @@ div a img {
   margin: 0 auto;
 }
 
-/* Estilo para cada pregunta */
+
 .faq-item {
   border-bottom: 1px solid #ccc;
   padding: 20px 0;
@@ -338,7 +337,7 @@ div a img {
   color: #666;
 }
 
-/* Estilo de footer */
+
 footer {
   background-color: #2d2d2d;
   color: whitesmoke;
@@ -350,12 +349,12 @@ footer p {
 }
 
 @media screen and (min-width: 1000px) {
-  /* Estilos para navbar */
+
   .navbar-nav {
     margin-left: auto;
     gap: 20px;
   }
-  /* Estilos para la sección "Somos GameCorp" */
+
   #somos-gamecorp .container {
     display: flex;
     justify-content: space-evenly;
@@ -381,7 +380,7 @@ footer p {
     margin-top: 0;
     text-align: start;
   }
-  /* Estilos para la sección "Nuestros Productos" */
+
   #nuestros-productos {
     padding: 150px;
   }
@@ -414,7 +413,7 @@ footer p {
     font-weight: 400;
     margin-top: 10px;
   }
-  /* Estilos para la sección "Productos" en el index */
+
   .productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -458,7 +457,7 @@ footer p {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr);
   }
-  /*estilo de iconos*/
+
   footer a {
     text-decoration: none;
   }
@@ -513,7 +512,7 @@ footer p {
     font-weight: 600;
     margin: 0 auto;
   }
-  /*estilo de iconos*/
+
   footer a {
     text-decoration: none;
   }
@@ -550,7 +549,7 @@ h2:nth-child(3), h3:nth-child(3), p:nth-child(3) {
   animation-delay: 0.3s;
 }
 
-/* Fonts */
+
 .jersey-15-regular {
   font-family: "jersey 15", sans-serif;
   font-weight: 400;
